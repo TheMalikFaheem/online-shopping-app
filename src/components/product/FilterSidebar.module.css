@@ -1,0 +1,54 @@
+.sidebar {
+    width: 100%;
+    padding-right: var(--spacing-l);
+}
+
+.section {
+    margin-bottom: var(--spacing-l);
+    padding-bottom: var(--spacing-l);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-m);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-s);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-s);
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    user-select: none;
+}
+
+.checkbox input {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+}
+
+.checkbox:hover {
+    color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}
